@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shapes and Colors with SVG and CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <svg width="1080" height="1920">
+        <g transform="scale(1.5)">
+            <circle cx="50" cy="50" r="40"></circle>
+            <rect x="200" y="50" width="50" height="50"></rect>
+            <circle cx="50" cy="200" r="40" fill="red"></circle>
+            <rect x="200" y="200" width="50" height="50" fill="red"></rect>
+
+            <g transform="translate(0,200)" fill="blue">
+                <circle cx="50" cy="200" r="40"></circle>
+                <rect x="200" y="200" width="50" height="50"></rect>
+            </g>
+
+            <g transform="translate(0,400)" fill="green" stroke="black">
+                <circle cx="50" cy="200" r="40" stroke-width="5"></circle>
+                <rect x="200" y="200" width="50" height="50"></rect>
+            </g>
+
+            <line x1="200" y1="200" x2="22" y2="22" stroke="black" stroke-width="10"></line>
+
+            <g stroke="black" stroke-width="10">
+                <line x1="300" y1="200" x2="22" y2="22"></line>
+                <path fill="#aa8888" d="M300 280 L350 200 L400 20 L500 20" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </svg>
+</body>
+
+</html>
